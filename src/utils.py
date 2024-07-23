@@ -151,7 +151,7 @@ def write_monthly_report_htmL(chem_subs, bnf_codes, bnf_descriptions, date):
     <h2>Monthly Report for {date}</h2>
     <p>This report details items appearing in the English Prescribing Data for {date} that have not previously appeared in the data (from Jan 2014).</p>
     {jan_alert}
-    <p><a href="https://html-preview.github.io/?url=https://github.com/chrisjwood16/openprescribing_tests/blob/main/reports/list_reports.html">View previous reports</a></p>
+    <p><a href="https://html-preview.github.io/?url=https://github.com/ebmdatalab/epd_new_items/blob/main/reports/list_reports.html">View previous reports</a></p>
     <h3>New Chemical Substances</h3>
     <p>Identify "chemical substances" prescribed for the first time</p>
     {chem_subs.to_html()}
@@ -212,7 +212,7 @@ def generate_list_reports_html():
     # Add links to all HTML files
     for html_file in html_files:
         title = os.path.splitext(html_file)[0]
-        link = f"https://html-preview.github.io/?url=https://github.com/chrisjwood16/openprescribing_tests/blob/main/reports/{html_file}"
+        link = f"https://html-preview.github.io/?url=https://github.com/ebmdatalab/epd_new_items/blob/main/reports/{html_file}"
         html_content += f'<li><a href="{link}">{title}</a></li>\n'
 
     # End the HTML content
