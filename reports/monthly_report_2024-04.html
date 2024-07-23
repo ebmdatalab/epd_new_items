@@ -1,0 +1,412 @@
+
+    <html>
+    <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            table-layout: auto;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th {
+            background-color: #0485d1;
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+        td, tr th {
+            padding: 8px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+    </head>
+    <body>
+    <h2>Monthly Report for 2024-04</h2>
+    <p>This report details items appearing in the English Prescribing Data for 2024-04 that have not previously appeared in the data (from Jan 2014).</p>
+	<p><a href="https://html-preview.github.io/?url=https://github.com/chrisjwood16/openprescribing_tests/blob/main/reports/list_reports.html">View previous reports</a></p>
+    
+    <h3>New Chemical Substances</h3>
+    <p>Identify "chemical substances" prescribed for the first time</p>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>BNF_CODE</th>
+      <th>BNF_DESCRIPTION</th>
+      <th>CHEMICAL_SUBSTANCE_BNF_DESCR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0407042U0AAABAB</td>
+      <td>Atogepant 60mg tablets</td>
+      <td>Atogepant</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0407042U0BBAAAA</td>
+      <td>Aquipta 10mg tablets</td>
+      <td>Atogepant</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0407042U0AAAAAA</td>
+      <td>Atogepant 10mg tablets</td>
+      <td>Atogepant</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>New BNF Codes</h3>
+    <p>Identify BNF codes used for the first time</p>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>BNF_CODE</th>
+      <th>BNF_DESCRIPTION</th>
+      <th>CHEMICAL_SUBSTANCE_BNF_DESCR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0107010AAAAAQAQ</td>
+      <td>Diltiazem 0.4% ointment</td>
+      <td>Diltiazem hydrochloride</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0205052AEAAADAD</td>
+      <td>Sacubitril 6mg / Valsartan 6mg gran in caps for opening</td>
+      <td>Sacubitril/valsartan</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0206010K0CVAAAE</td>
+      <td>Medomon XL 60mg tablets</td>
+      <td>Isosorbide mononitrate</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0208020X0BBAIAI</td>
+      <td>Pradaxa 150mg granules sachets</td>
+      <td>Dabigatran etexilate</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0304020AAAAAAAA</td>
+      <td>Benralizumab 30mg/1ml inj pre-filled syringes</td>
+      <td>Benralizumab</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0402010J0AABGBG</td>
+      <td>Haloperidol 200micrograms/5ml oral liquid</td>
+      <td>Haloperidol</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0402020AAAAAEAE</td>
+      <td>Risperidone 100mg prolonged-release inj pre-filled syringes</td>
+      <td>Risperidone</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0404000U0BDAFAE</td>
+      <td>Elvanse Adult 60mg capsules</td>
+      <td>Lisdexamfetamine dimesylate</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0407020B0AAALAL</td>
+      <td>Buprenorphine 25micrograms/hour transdermal patches</td>
+      <td>Buprenorphine</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0407020A0BWAEAN</td>
+      <td>Cynril 1.2mg lozenges with integral oromucosal applicator</td>
+      <td>Fentanyl</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0407042U0AAABAB</td>
+      <td>Atogepant 60mg tablets</td>
+      <td>Atogepant</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>0407042U0BBAAAA</td>
+      <td>Aquipta 10mg tablets</td>
+      <td>Atogepant</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>0407042U0AAAAAA</td>
+      <td>Atogepant 10mg tablets</td>
+      <td>Atogepant</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>0408010ALAAAFAF</td>
+      <td>Brivaracetam 50mg/5ml solution for injection vials</td>
+      <td>Brivaracetam</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0410030B0BCAAAG</td>
+      <td>Zubsolv 1.4mg/0.36mg sublingual tablets</td>
+      <td>Buprenorph hydrochloride/naloxone hydrochloride</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0601022B0BUAAAT</td>
+      <td>Rudimet 750mg Prolonged Release tablets</td>
+      <td>Metformin hydrochloride</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>0601023AZBBADAD</td>
+      <td>Mounjaro KwikPen 15mg/0.6ml inj 2.4ml pre-filled pens</td>
+      <td>Tirzepatide</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0601023AZAAACAC</td>
+      <td>Tirzepatide 7.5mg/0.6ml inj 2.4ml pf dispos dev</td>
+      <td>Tirzepatide</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>0601023AZAAADAD</td>
+      <td>Tirzepatide 15mg/0.6ml inj 2.4ml pf dispos dev</td>
+      <td>Tirzepatide</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>0601023AZAAAFAF</td>
+      <td>Tirzepatide 10mg/0.6ml inj 2.4ml pf dispos dev</td>
+      <td>Tirzepatide</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>0601023AZBBAFAF</td>
+      <td>Mounjaro KwikPen 10mg/0.6ml inj 2.4ml pre-filled pens</td>
+      <td>Tirzepatide</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>0704020J0BCACAZ</td>
+      <td>Ditropan 2.5mg/5ml elixir</td>
+      <td>Oxybutynin</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>0704050Z0BHAAAA</td>
+      <td>Liberize 50mg tablets</td>
+      <td>Sildenafil (Erectile Dysfunction)</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>0801050CLAAAAAA</td>
+      <td>Abemaciclib 100mg tablets</td>
+      <td>Abemaciclib</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>0802010G0AACPCP</td>
+      <td>Azathioprine 50mg/5ml oral suspension sugar free</td>
+      <td>Azathioprine</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>0802020U0AAAGAG</td>
+      <td>Sirolimus 2mg/g gel</td>
+      <td>Sirolimus</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>0901030U0BBACAC</td>
+      <td>Evrenzo 70mg tablets</td>
+      <td>Roxadustat</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>0906040G0ETAAFD</td>
+      <td>BetterYou D1000 Vitamin D 1,000units Daily oral spray</td>
+      <td>Colecalciferol</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>0906040G0ETADFL</td>
+      <td>BetterYou Vitamin D 3,000units Daily oral spray</td>
+      <td>Colecalciferol</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>0913191A0AAAAAA</td>
+      <td>Generic Fructose Module powder</td>
+      <td>Powder carbohydrate supplement (0913191)</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>0913211B0AAADAD</td>
+      <td>Generic S.O.S25 oral powder 52g sachets</td>
+      <td>Powder energy (carbohydrate) fortifier (0913211)</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>0913451H0BCAAAB</td>
+      <td>Mevalia low protein grissini</td>
+      <td>Food replacer discontinued or OTC savoury biscuits (0913451)</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>0913501A0AAAAAA</td>
+      <td>Generic SMA Advanced First Infant milk powder</td>
+      <td>Powder OTC infant formulae (0913501)</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>0913511A0BBABAD</td>
+      <td>SMA Advanced Growing Up milk powder</td>
+      <td>Powder OTC follow on formula (0913511)</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>0914011N0AAAAAA</td>
+      <td>Generic TwoCal liquid</td>
+      <td>Tube feed 2 kcal/ml with fibre (0914011)</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>1001030AEAAABAB</td>
+      <td>Upadacitinib 30mg modified-release tablets</td>
+      <td>Upadacitinib</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>1104010I0AAAXAX</td>
+      <td>Dexamethasone 1.5mg/ml eye dps 0.3ml ud preservative free</td>
+      <td>Dexamethasone</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>1106000L0AAACAC</td>
+      <td>Latanoprost 50micrograms/ml eye drops preservative free</td>
+      <td>Latanoprost</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>1404000ATBHADBK</td>
+      <td>Spikevax XBB.1.5 COVID-19 Vacc 0.1mg/1ml inj md vials</td>
+      <td>Coronavirus vaccine</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>1404000ATBGAAAF</td>
+      <td>Comirnaty COVID-19 mRNA Vaccine 0.3ml inj multidose vials</td>
+      <td>Coronavirus vaccine</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>21300000981</td>
+      <td>Ocufresh Everyday 0.2% eye drops 0.5ml unit dose preservative free</td>
+      <td>Eye Products</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>21300000983</td>
+      <td>Trehapan eye drops preservative free</td>
+      <td>Eye Products</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>21480000109</td>
+      <td>FreeStyle Libre 2 Plus Sensor</td>
+      <td>Detection Sensor Interstitial Fluid/Gluc</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>New BNF Descriptions</h3>
+    <p>Identify new descriptions only (not new BNF code)</p>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>BNF_CODE</th>
+      <th>BNF_DESCRIPTION</th>
+      <th>CHEMICAL_SUBSTANCE_BNF_DESCR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>21</th>
+      <td>0704020J0BCACAZ</td>
+      <td>Ditropan 2.5mg/5ml elixir</td>
+      <td>Oxybutynin</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>0901040B0AAABAB</td>
+      <td>Romiplostim 250microgram powder and solvent inj vials</td>
+      <td>Romiplostim</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>0906022K0BGACAG</td>
+      <td>NicoVit-B3 500mg capsules</td>
+      <td>Nicotinamide</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>0913011N0BCAAAE</td>
+      <td>Aymes Actagain 1.5 Complete Starter Pack liquid</td>
+      <td>Ready to serve 1.5 kcal/ml milkshake (0913011)</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>0913011N0BCABAF</td>
+      <td>Aymes Actagain 1.5 Complete liquid (4 flavours)</td>
+      <td>Ready to serve 1.5 kcal/ml milkshake (0913011)</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>0913191A0AAAAAA</td>
+      <td>Generic Fructose Module powder</td>
+      <td>Powder carbohydrate supplement (0913191)</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>0913451H0BCAAAB</td>
+      <td>Mevalia low protein grissini</td>
+      <td>Food replacer discontinued or OTC savoury biscuits (0913451)</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>0913511A0BBABAD</td>
+      <td>SMA Advanced Growing Up milk powder</td>
+      <td>Powder OTC follow on formula (0913511)</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>1404000N0BGAAAD</td>
+      <td>Verorab inj 0.5ml vials (Imported (France))</td>
+      <td>Rabies</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    

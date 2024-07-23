@@ -1,0 +1,328 @@
+
+    <html>
+    <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            table-layout: auto;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th {
+            background-color: #0485d1;
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+        td, tr th {
+            padding: 8px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+    </head>
+    <body>
+    <h2>Monthly Report for 2024-05</h2>
+    <p>This report details items appearing in the English Prescribing Data for 2024-05 that have not previously appeared in the data (from Jan 2014).</p>
+	<p><a href="https://html-preview.github.io/?url=https://github.com/chrisjwood16/openprescribing_tests/blob/main/reports/list_reports.html">View previous reports</a></p>
+    
+    <h3>New Chemical Substances</h3>
+    <p>Identify "chemical substances" prescribed for the first time</p>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>BNF_CODE</th>
+      <th>BNF_DESCRIPTION</th>
+      <th>CHEMICAL_SUBSTANCE_BNF_DESCR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0503032L0BBAAA0</td>
+      <td>Vosevi 400mg/100mg/100mg tablets</td>
+      <td>Sofosbuvir/velpatasvir/voxilaprevir</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0913461F0BEAEAD</td>
+      <td>Juvela gluten free pasta spaghetti</td>
+      <td>Specialist food replacer OTC or disc pasta (0913461)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0913461F0BEABAD</td>
+      <td>Juvela gluten free pasta fusilli</td>
+      <td>Specialist food replacer OTC or disc pasta (0913461)</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>New BNF Codes</h3>
+    <p>Identify BNF codes used for the first time</p>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>BNF_CODE</th>
+      <th>BNF_DESCRIPTION</th>
+      <th>CHEMICAL_SUBSTANCE_BNF_DESCR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0205052AEAAAEAE</td>
+      <td>Sacubitril 15mg / Valsartan 16mg gran in caps for opening</td>
+      <td>Sacubitril/valsartan</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0205052AEBBAEAE</td>
+      <td>Entresto 15mg/16mg granules in capsules for opening</td>
+      <td>Sacubitril/valsartan</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0407020B0BKAEAL</td>
+      <td>Reletrans 25microgram/hour transdermal patches</td>
+      <td>Buprenorphine</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0407020A0AACECE</td>
+      <td>Fentanyl 533microgram sublingual tablets</td>
+      <td>Fentanyl</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0407020M0AABVBV</td>
+      <td>Methadone 50mg tablets</td>
+      <td>Methadone hydrochloride</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0407041T0BFAAAF</td>
+      <td>Gramegran 50mg tablets</td>
+      <td>Sumatriptan succinate</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0408010H0AABWBW</td>
+      <td>Lamotrigine 10mg/ml oral suspension sugar free</td>
+      <td>Lamotrigine</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0408010C0AAAXAX</td>
+      <td>Carbamazepine 200mg/5ml oral liquid</td>
+      <td>Carbamazepine</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0503032L0BBAAA0</td>
+      <td>Vosevi 400mg/100mg/100mg tablets</td>
+      <td>Sofosbuvir/velpatasvir/voxilaprevir</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0601022B0BTAAAT</td>
+      <td>Jesacrin 750mg modified-release tablets</td>
+      <td>Metformin hydrochloride</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0604020K0AABUBU</td>
+      <td>Testosterone 20mg/g gel (23mg per actuation) refill</td>
+      <td>Testosterone</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>0705010A0BBAAAA</td>
+      <td>Veoza 45mg tablets</td>
+      <td>Fezolinetant</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>0901030U0AAAEAE</td>
+      <td>Roxadustat 150mg tablets</td>
+      <td>Roxadustat</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>0901060I0BEAAAP</td>
+      <td>Nivestim 12million units/0.2ml inj pre-filled syringes</td>
+      <td>Filgrastim</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0906040G0EVAABA</td>
+      <td>LipoSil Liposomal D3 2,000unit capsules</td>
+      <td>Colecalciferol</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0906040G0EPAECR</td>
+      <td>AceCal D3 20,000unit tablets</td>
+      <td>Colecalciferol</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>091200000BGADFY</td>
+      <td>Equazen triple strength capsules</td>
+      <td>Other health supplement preparations</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0913021I0BBABAB</td>
+      <td>PaediaSure Compact Starter Pack liquid</td>
+      <td>Ready to serve 2.4 kcal/ml milkshake lower volume (0913021)</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>0913021F0BDABAD</td>
+      <td>PaediaSure Plus fibre Starter Pack liquid</td>
+      <td>Ready to serve 1.5 kcal/ml milkshake with fibre (0913021)</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>0913141A0BBADAA</td>
+      <td>Renapro Shot 60ml bottles apple</td>
+      <td>RtS 1.4 kcal/ml energy and higher protein liquid (0913141)</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>0913191A0BBAAAA</td>
+      <td>Fructose Module powder</td>
+      <td>Powder carbohydrate supplement (0913191)</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>0913205A0BCAAAA</td>
+      <td>PKU GMPro oral powder 33.3g sachets</td>
+      <td>Powder 10g GMP protein equivalent (0913205)</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>0913271C0AAAIAI</td>
+      <td>Generic Glutafin gluten free Select multipurpose fibre mix</td>
+      <td>Specialist food replacer flour type mixes (0913271)</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>0913271A0AAALAL</td>
+      <td>Generic Glutafin gluten free Select seeded loaf sliced</td>
+      <td>Specialist food replacer bread (0913271)</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>0913271A0AAAHAH</td>
+      <td>Generic Glutafin gluten free Select fibre loaf sliced</td>
+      <td>Specialist food replacer bread (0913271)</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>0913461A0BCAAAB</td>
+      <td>Glutafin gluten free cornflakes</td>
+      <td>Specialist food replacer OTC/disc breakfast cereal (0913461)</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>0913461F0BEAEAD</td>
+      <td>Juvela gluten free pasta spaghetti</td>
+      <td>Specialist food replacer OTC or disc pasta (0913461)</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>1311020L0CIAAAI</td>
+      <td>Hibiwash 4% solution</td>
+      <td>Chlorhexidine gluconate</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>1404000N0BGABAD</td>
+      <td>Verorab inj 0.5ml vials (Sanofi)</td>
+      <td>Rabies</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>21300000982</td>
+      <td>Ocufresh Intense Relief 0.4% eye drops 0.5ml unit dose preservative free</td>
+      <td>Eye Products</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>21480000110</td>
+      <td>Dexcom One+ Sensor</td>
+      <td>Detection Sensor Interstitial Fluid/Gluc</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>New BNF Descriptions</h3>
+    <p>Identify new descriptions only (not new BNF code)</p>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>BNF_CODE</th>
+      <th>BNF_DESCRIPTION</th>
+      <th>CHEMICAL_SUBSTANCE_BNF_DESCR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0109040N0BDABAQ</td>
+      <td>Creon 25000 gastro-resistant capsules (Viatris)</td>
+      <td>Pancreatin</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0109040N0BDADAU</td>
+      <td>Creon 10000 gastro-resistant capsules (Viatris)</td>
+      <td>Pancreatin</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0503010AAAAAAAA</td>
+      <td>Emtricitabine 200mg / Tenofovir disoproxil 245mg tablets</td>
+      <td>Emtricitabine and tenofovir disoproxil</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>0913191A0BBAAAA</td>
+      <td>Fructose Module powder</td>
+      <td>Powder carbohydrate supplement (0913191)</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>0913205A0BCAAAA</td>
+      <td>PKU GMPro oral powder 33.3g sachets</td>
+      <td>Powder 10g GMP protein equivalent (0913205)</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>0913461A0BCAAAB</td>
+      <td>Glutafin gluten free cornflakes</td>
+      <td>Specialist food replacer OTC/disc breakfast cereal (0913461)</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>0913461F0BEAEAD</td>
+      <td>Juvela gluten free pasta spaghetti</td>
+      <td>Specialist food replacer OTC or disc pasta (0913461)</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
