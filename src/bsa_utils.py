@@ -57,21 +57,30 @@ class CacheManager:
             json.dump(cache_mapping, f, indent=4)
 
     def save_to_cache(self, api_url, response_json):
+        # Load the current cache mapping
         cache_mapping = self.load_cache_mapping()
-        cache_file = os.path.join(self.cache_dir, f"cache_{len(cache_mapping) + 1}.json")
-        with open(cache_file, 'w') as f:
+        # Create a new cache file path
+        cache_file = os.path.join(self.cache_dir, f"cache_{len(cache_mapping) + 1}.json.gz")
+        # Open the cache file in write mode with gzip compression
+        with gzip.open(cache_file, 'wt', encoding='utf-8') as f:
             json.dump(response_json, f)
+        # Update the cache mapping with the new file
         cache_mapping[api_url] = cache_file
+        # Save the updated cache mapping
         self.save_cache_mapping(cache_mapping)
-
+    
     def check_cache(self, api_url):
+        # Load the current cache mapping
         cache_mapping = self.load_cache_mapping()
         if api_url in cache_mapping:
+            # Get the cache file path from the mapping
             cache_file = cache_mapping[api_url]
             if os.path.exists(cache_file):
                 logging.info(f"Retrieving {api_url} from cache")
-                with open(cache_file, 'r') as f:
+                # Open the cache file with gzip compression and read the JSON data
+                with gzip.open(cache_file, 'rt', encoding='utf-8') as f:
                     return json.load(f)
+        # Return None if the URL is not in the cache or the file does not exist
         return None
 
 CACHE_MANAGER_OBJ = CacheManager(CONFIG_OBJ.CACHE_DIR, CONFIG_OBJ.CACHE_MAPPING_FILE)
